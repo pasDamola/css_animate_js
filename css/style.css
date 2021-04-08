@@ -1,5 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
 hp-content {
     background-color: #f00;
     display: block;
     /* inline elements can't have a background color */
+    width: 100vw;
+    height: 100vh;
+}
+
+
+hp-presentation {
+    background-color: #fff;
+    display:block;
+    width: 80vmin;
+    height: 80vmin;
+    /* margin: auto; */
+}
+
+hp-slide {
+    background-color: #0f0;
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
 }
