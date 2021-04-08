@@ -3,5 +3,15 @@ window.addEventListener('DOMContentLoaded', function(e) {
 })
 
 function handlePresentationClick(e) {
-    alert(e)
+    let current = document.querySelector('hp-slide.active')
+    let next = current.nextElementSibling
+
+    while (next && next.tagName != 'HP_SLIDE') {
+        next = next.nextElementSibling
+    }
+
+    if (next) {
+        current.classList.remove('active')
+        next.classList.add('active')
+    }
 }
