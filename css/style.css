@@ -6,10 +6,13 @@ html, body {
 
 hp-content {
     background-color: #f00;
-    display: block;
+    display: flex;
     /* inline elements can't have a background color */
     width: 100vw;
     height: 100vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 
