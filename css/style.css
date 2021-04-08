@@ -1,0 +1,5 @@
+hp-content {
+    background-color: #f00;
+    display: block;
+    /* inline elements can't have a background color */
+}
